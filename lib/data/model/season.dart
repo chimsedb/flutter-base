@@ -45,4 +45,6 @@ class Thumbnail with _$Thumbnail {
 
   factory Thumbnail.fromJson(Map<String, dynamic> json) =>
       _$ThumbnailFromJson(json['medium']);
+
 }
+

@@ -11,6 +11,7 @@
 // ignore_for_file: type=lint
 
 import 'package:auto_route/auto_route.dart' as _i4;
+import 'package:flutter/cupertino.dart' as _i7;
 import 'package:flutter/material.dart' as _i5;
 import 'package:flutter_base/data/model/manga.dart' as _i6;
 import 'package:flutter_base/ui/chapter_category/chapter_category_view.dart'
@@ -70,7 +71,7 @@ class HomeRoute extends _i4.PageRouteInfo<void> {
 /// generated route for
 /// [_i2.ChapterCategoryView]
 class ChapterCategoryRoute extends _i4.PageRouteInfo<ChapterCategoryRouteArgs> {
-  ChapterCategoryRoute({required _i6.Manga manga, _i5.Key? key})
+  ChapterCategoryRoute({required _i6.Manga manga, _i7.Key? key})
       : super(ChapterCategoryRoute.name,
             path: '/chapter-category-view',
             args: ChapterCategoryRouteArgs(manga: manga, key: key));
@@ -83,7 +84,7 @@ class ChapterCategoryRouteArgs {
 
   final _i6.Manga manga;
 
-  final _i5.Key? key;
+  final _i7.Key? key;
 
   @override
   String toString() {
@@ -94,7 +95,7 @@ class ChapterCategoryRouteArgs {
 /// generated route for
 /// [_i3.DetailChapterView]
 class DetailChapterRoute extends _i4.PageRouteInfo<DetailChapterRouteArgs> {
-  DetailChapterRoute({required String slug, required String id, _i5.Key? key})
+  DetailChapterRoute({required String slug, required String id, _i7.Key? key})
       : super(DetailChapterRoute.name,
             path: '/detail-chapter-view',
             args: DetailChapterRouteArgs(slug: slug, id: id, key: key));
@@ -110,7 +111,7 @@ class DetailChapterRouteArgs {
 
   final String id;
 
-  final _i5.Key? key;
+  final _i7.Key? key;
 
   @override
   String toString() {

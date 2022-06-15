@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_base/data/di/repository_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../data/repository/remote/app_api_helper.dart';

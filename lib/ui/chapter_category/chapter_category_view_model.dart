@@ -15,7 +15,9 @@ class ChapterCategoryViewModel extends BaseViewModel {
 
   Future<void> fetchMangaSeason(String playlistID, String profileID) async {
     await appApiHelper.getMangaSeason(playlistID, profileID).then((value) {
-      _seasons.add(value.dataOrThrow);
+      if(value.isSuccess){
+        _seasons.add(value.dataOrThrow);
+      }
     });
   }
 
